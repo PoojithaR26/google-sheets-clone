@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#toolbar, #formula-section {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal column width */
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+td:focus {
+    outline: 2px solid blue;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+th:first-child {
+    width: 40px; /* Adjust row number width */
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Google Sheets Clone</h1>
+
+    <!-- Toolbar for formatting -->
+    <div id="toolbar">
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('uppercase')">Uppercase</button>
+        <button id="importCSV">Import CSV</button>
+        <button id="exportCSV">Export CSV</button>
+        <input type="file" id="csvFileInput" accept=".csv" style="display: none;">
+
+    </div>
+
+    <!-- Formula input -->
+    <div id="formula-section">
+        <input type="text" id="formula-input" placeholder="Enter formula (e.g., SUM(A1:A3))">
+        <button onclick="applyFormula()">Apply</button>
+    </div>
+
+    <!-- Spreadsheet Table -->
+    <table id="spreadsheet">
+        <thead>
+          <tr>
+            <th></th> <!-- Top-left empty cell -->
+            <!-- Column headers (A, B, C, ...) will be generated dynamically -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows and cells will be generated dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
